@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="style.css">
+    <title>Ascii Encrypted</title>
+    <style>
+        body {
+            background-color: #2f3241;
+            padding: 50px; /* Add padding to body */
+            margin: 0; /* Reset margin */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: "Courier New", Courier, monospace; /* Set default font family */
+        }
+    
+        .content {
+            text-align: center; /* Center content */
+        }
+    
+        .button {
+            background-color: #007bff; /* Change button color */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 20px; /* Add margin to buttons */
+            cursor: pointer;
+        }
+    
+        .button:hover {
+            background-color: #0056b3; /* Darker color on hover */
+        }
+    
+        #textArea {
+            width: 100%; /* Make textarea full width */
+            max-width: 500px; /* Limit max-width */
+            height: 100px; /* Adjust height */
+            resize: none;
+            margin-top: 20px; /* Add margin to textarea */
+            font-family: "Courier New", Courier, monospace; /* Set font family to monospaced */
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div class="content">
+        <button id="btnEncrypted" class="button">
+            Encryption
+        </button>
+        <button id="btnDecrypted" class="button">
+            Decryption
+        </button>
+        <div class="content centered">
+            <textarea rows="3" placeholder="Enter Your Text" id="textArea"></textarea>
+            <button id="btnClear" class="button">Clear</button>
+            <button id="btnSave" class="button">Save</button>
+        </div>
+        <div id="githubBtn">
+            <button id="btnGithub" class="button">Github</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
